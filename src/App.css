@@ -20,8 +20,9 @@ body{
 }
 
 .TriviaContainer {
-  width: 100%;
+  width: 90%;
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .disabled-div{
@@ -31,5 +32,12 @@ body{
 
 .enabled-div{
   opacity: 1; 
+}
+
+@media screen and (orientation: landscape) {
+  #container{
+    align-items: baseline;
+  }
+  
 }
 

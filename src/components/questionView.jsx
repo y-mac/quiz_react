@@ -20,6 +20,7 @@ const QuestionView = ({trivia,setQuestion}) => {
       align-items:center;
       padding: 1em;
       box-sizing: border-box;
+      margin: 1em 0 0;
     `;
     
     const TriviaHeader = styled.header`
