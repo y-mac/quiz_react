@@ -2,7 +2,7 @@
   "name": "quiz",
   "version": "0.1.0",
   "private": true,
-  "engines":{
+  "engines": {
     "node": "v12.14.1",
     "npm": "6.13.4"
   },
@@ -19,7 +19,9 @@
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
     "redux-localstorage-simple": "^2.3.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,8 +51,6 @@
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0"
+    "@babel/preset-react": "^7.12.10"
   }
 }
