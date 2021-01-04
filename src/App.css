@@ -2,7 +2,8 @@
 body{
   width:100%;
   height:100%;
-  background:blue;
+  background: rgb(19,168,205);
+  background: linear-gradient(90deg, rgba(19,168,205,1) 28%, rgba(5,41,116,1) 100%);
   margin:0;
   padding:0;
 }
@@ -22,3 +23,13 @@ body{
   width: 100%;
   max-width: 600px;
 }
+
+.disabled-div{
+  opacity: 0.5;
+  transform: all 0.3s ease-in-out;
+}
+
+.enabled-div{
+  opacity: 1; 
+}
+

@@ -9,7 +9,7 @@ const QuestionView = ({trivia,setQuestion}) => {
     const [disabledButton, setDisabledButton] = useState(true);
     const [counter, setCounter] = useState(0);
     const CounterHolder =styled.div`
-      background: red;
+      background: #391cad;
       color: white;
       font-size: 1.25rem;
       font-weight: 600;
@@ -51,9 +51,11 @@ const QuestionView = ({trivia,setQuestion}) => {
       max-width: 600px;
       color: white;
       font-size:1.25rem;
-      background:red; 
+      background:#391cad; 
       padding:1em;
       box-sizing: border-bottom;
+      outline:none;
+      border:none;
     `;
 
     const QuestionButton = styled.button`
@@ -61,9 +63,11 @@ const QuestionView = ({trivia,setQuestion}) => {
       max-width: 600px;
       color: white;
       font-size:1.25rem;
-      background:green; 
+      background:#391cad; 
       padding:1em;
       box-sizing: border-bottom;
+      outline:none;
+      border:none;
     `;
 
     const NextBtn = styled.button`
@@ -71,10 +75,12 @@ const QuestionView = ({trivia,setQuestion}) => {
       max-width: 600px;
       color: white;
       font-size:1.25rem;
-      background:green; 
+      background:#391cad; 
       padding:1em;
-      box-sizing: border-bottom;
-      margin-top:1em 0;
+      box-sizing: border-box;
+      margin:1em 0 0;
+      outline:none;
+      border:none;
     `;
 
     const ButtonHolder = styled.div`
@@ -140,16 +146,18 @@ const QuestionView = ({trivia,setQuestion}) => {
           )}
         </ButtonHolder>
         <ButtonHolder>
-          <NextBtn
-            disabled={disabledButton}
-            onClick={()=>{
-              handleGetQuestion();   
-              setShowAnswer(false);
-              setDisabledButton(true);
-            }}
-          >
-            Next Question 
-          </NextBtn>
+          <div className={disabledButton===true ? 'disabled-div' : 'enabled-div'}>
+            <NextBtn
+              disabled={disabledButton}
+              onClick={()=>{
+                handleGetQuestion();   
+                setShowAnswer(false);
+                setDisabledButton(true);
+              }}
+            >
+              Next Question 
+            </NextBtn>
+          </div>
         </ButtonHolder>
         
         </div>  

@@ -30,7 +30,7 @@ const Btn = styled.button`
   width: 100%;
   padding: 1em;
   font-size: 1.25rem;
-  background: red;
+  background: #391cad;
   color:white;
   font-weight:bold;
   outline:none;
