@@ -34,7 +34,7 @@ body{
   opacity: 1; 
 }
 
-@media screen and (orientation: landscape) {
+@media screen and(max-width: 1023px) and (orientation: landscape) {
   #container{
     align-items: baseline;
   }
